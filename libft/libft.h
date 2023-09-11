@@ -16,6 +16,7 @@
 #include <string.h>
 
 size_t  ft_strlen(const char *str);
+int     ft_atoi(const char *str);
 
 int     ft_isalpha(int character);
 int     ft_idigit(int character);
