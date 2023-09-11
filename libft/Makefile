@@ -10,13 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc							#Compilation
-CFLAGS = -Wall -Wextra -Werror		#Flags for compilation
-GFLAGS = $(CFLAGS) -g				#Flag for gdb or valgrind
-NAME = libft						#Name of lib
-SRC =								#Include source files
-INCLUDE =							#Include headers
-OBJS = $(SRC:.c=.o)					#Change .c to .o
+CC = gcc												#Compilation
+CFLAGS = -Wall -Wextra -Werror							#Flags for compilation
+GFLAGS = $(CFLAGS) -g									#Flag for gdb or valgrind
+NAME = libft											#Name of lib
+SRC = ft_strlen.c										#Include source files
+INCLUDE = libft.h										#Include headers
+OBJS = $(SRC:.c=.o)										#Change .c to .o
 
 all : $(NAME)
 

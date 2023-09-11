@@ -1,20 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchartie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 18:05:39 by tchartie          #+#    #+#             */
-/*   Updated: 2023/09/11 18:05:39 by tchartie         ###   ########.fr       */
+/*   Created: 2023/09/11 18:36:03 by tchartie          #+#    #+#             */
+/*   Updated: 2023/09/11 18:36:03 by tchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
 #include <string.h>
 
-size_t ft_strlen(const char *str);
+size_t ft_strlen(const char *str)
+{
+    int size;
 
-#endif //LIBFT_H
+    size = 0;
+    if (!str)
+        return (0);
+    while (str[size])
+        size++;
+    return (size);
+}
