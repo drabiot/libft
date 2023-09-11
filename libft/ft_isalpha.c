@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tchartie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/11 18:05:39 by tchartie          #+#    #+#             */
-/*   Updated: 2023/09/11 18:05:39 by tchartie         ###   ########.fr       */
+/*   Created: 2023/09/11 20:02:00 by tchartie          #+#    #+#             */
+/*   Updated: 2023/09/11 20:02:00 by tchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-#include <string.h>
-
-size_t  ft_strlen(const char *str);
-
-int     ft_isalpha(int character);
-int     ft_idigit(int character);
-int     ft_isalnum(int character);
-int     ft_isascii(int character);
-int     ft_isprint(int character);
-
-#endif //LIBFT_H
+int ft_isalpha(int character)
+{
+    if ((character >= 'A' && character <= 'Z') 
+        || (character >= 'a' && character <= 'z'))
+        return (1);
+    return (0);
+}
