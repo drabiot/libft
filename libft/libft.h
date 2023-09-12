@@ -18,6 +18,8 @@
 
 size_t  ft_strlen(const char *str);
 char    *ft_strdup(const char *src);
+char    *ft_strcpy(char *dest, const char *src);
+char    *ft_strncpy(char *dest, const char *src, size_t length);
 int     ft_atoi(const char *str);
 
 int     ft_isalpha(int character);
