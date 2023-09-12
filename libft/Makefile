@@ -14,7 +14,7 @@ CC = gcc												#Compilation
 CFLAGS = -Wall -Wextra -Werror							#Flags for compilation
 GFLAGS = $(CFLAGS) -g									#Flag for gdb or valgrind
 NAME = libft											#Name of lib
-SRC = ft_strlen.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c
+SRC = ft_strlen.c ft_strdup.c ft_atoi.c ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c
 INCLUDE = libft.h										#Include headers
 OBJS = $(SRC:.c=.o)										#Change .c to .o
 
