@@ -6,7 +6,7 @@
 #    By: tchartie <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/11 18:05:50 by tchartie          #+#    #+#              #
-#    Updated: 2023/11/07 13:44:48 by tchartie         ###   ########.fr        #
+#    Updated: 2023/11/08 16:06:25 by tchartie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,7 @@ $(NAME) : $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :								#Rule clean (Delete all .o)
-	rm -rf *.o
+	rm -rf $(OBJS) $(BONUS_OBJS)
 
 fclean : clean						#Rule fclean (Delete all .o & libft.a)
 	rm -rf $(NAME)

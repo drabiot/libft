@@ -6,7 +6,7 @@
 /*   By: tchartie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 17:08:24 by tchartie          #+#    #+#             */
-/*   Updated: 2023/11/02 16:08:59 by tchartie         ###   ########.fr       */
+/*   Updated: 2023/11/08 16:08:25 by tchartie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	if (!ft_isascii(c))
-		return ((char *) s);
+	c = (char)c;
 	while (s[i])
 	{
 		if (s[i] == c)
