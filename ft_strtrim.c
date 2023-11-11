@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	trim_start(char const *s1, char const *set)
+static int	trim_start(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	len;
@@ -28,7 +28,7 @@ int	trim_start(char const *s1, char const *set)
 	return (i);
 }
 
-int	trim_end(char const *s1, char const *set)
+static int	trim_end(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	len;

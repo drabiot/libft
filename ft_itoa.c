@@ -49,7 +49,7 @@ static char	*ft_putnbr(int nb, char *arr)
 	return (arr);
 }
 
-int	ft_size(int nb)
+static int	ft_size(int nb)
 {
 	int	i;
 
